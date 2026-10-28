@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio · Juan Manuel Cuadrado Muñiz</title>
+<meta name="description" content="Proyectos de Juan Manuel Cuadrado Muñiz durante el ciclo de DAM.">
+<meta name="theme-color" content="#12302A">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/sidebar.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="js/menu.js" defer></script>
+<script src="js/portfolio.js" defer></script>
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="sidebar">
+  <div class="sidebar__cabecera">
+    <a class="marca" href="index.html"><span class="marca__sigla" aria-hidden="true">JM</span><span class="marca__nombre">Juan Manuel<br>Cuadrado Muñiz</span></a>
+    <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu-principal">Menú</button>
+  </div>
+  <div id="menu-principal" class="sidebar__panel">
+    <nav aria-label="Principal"><ul class="sidebar__nav"><li><a href="index.html">Inicio</a></li><li><a href="sobremi.html">Sobre mí</a></li><li><a href="curriculum.html">Currículum</a></li><li><a href="portfolio.html" aria-current="page">Portfolio</a></li><li><a href="contacto.html">Contacto</a></li></ul></nav>
+    <ul class="sidebar__redes">
+      <li><a href="https://github.com/jjuanma4" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/TU-USUARIO/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="mailto:juanmacm2007@gmail.com">juanmacm2007@gmail.com</a></li>
+    </ul>
+  </div>
+</header>
+<main id="contenido" class="contenido">
+
+<h1>Portfolio</h1>
+<p class="lead">Aquí publicaré los proyectos que haga durante el ciclo de DAM.</p>
+<div id="portfolio-filtros" class="filtros" role="group" aria-label="Filtrar proyectos por tipo" hidden><button type="button" data-filtro="todos" aria-pressed="true">Todos</button><button type="button" data-filtro="android" aria-pressed="false">Android</button><button type="button" data-filtro="web" aria-pressed="false">Web</button><button type="button" data-filtro="escritorio" aria-pressed="false">Escritorio</button><button type="button" data-filtro="backend" aria-pressed="false">Backend</button><button type="button" data-filtro="juegos" aria-pressed="false">Juegos</button><button type="button" data-filtro="apuntes" aria-pressed="false">Apuntes</button></div>
+<div id="proyectos-grid" class="proyectos-grid">
+<!-- PLANTILLA DE TARJETA: copia este bloque aquí dentro y cambia los datos.
+     data-tipo: android, web, escritorio, backend, juegos o apuntes
+<article class="proyecto-card" data-tipo="web">
+  <img src="assets/img/mi-proyecto/portada.png" alt="Captura de Mi proyecto" loading="lazy" width="800" height="500">
+  <div class="proyecto-card__cuerpo">
+    <p class="proyecto-card__tipo">Web</p>
+    <h2><a href="proyectos/mi-proyecto.html">Mi proyecto</a></h2>
+    <p>Una frase que explique qué hace.</p>
+    <ul class="etiquetas"><li>HTML</li><li>CSS</li></ul>
+  </div>
+</article>
+-->
+</div>
+<div id="portfolio-vacio" class="vacio">
+  <h2>Todavía no hay proyectos publicados</h2>
+  <p>Estoy preparando los primeros. Mientras tanto, puedes ver mi actividad en <a href="https://github.com/jjuanma4" target="_blank" rel="noopener">GitHub</a>.</p>
+</div>
+<footer class="pie"><p>© 2026 Juan Manuel Cuadrado Muñiz. Web estática con HTML, CSS y JavaScript.</p></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.proyecto{max-width:52rem}
+.proyecto__volver{margin-bottom:1.5rem;font-size:.95rem}
+.proyecto .datos{margin:2rem 0}
+.proyecto .seccion{margin-top:3rem}
+.capturas{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1rem}
+.capturas figure{overflow:hidden;border:1px solid var(--linea);border-radius:6px;background:#fff}
+.capturas img{width:100%;height:auto}
+.capturas figcaption{padding:.6rem .9rem;font-size:.9rem;color:var(--apagado)}

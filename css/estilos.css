@@ -1,0 +1,57 @@
+:root{--campo:#12302A;--campo-2:#1B4339;--tiza:#F1F3EE;--tinta:#17211E;--apagado:#4C5A55;--oro:#D9A94A;--oro-texto:#86600F;--linea:rgba(18,48,42,.18);
+--f-titulo:"Fraunces",Georgia,serif;--f-texto:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--ancho-sidebar:17.5rem;--medida:42rem}
+body{font-family:var(--f-texto);font-size:1.0625rem;line-height:1.65;color:var(--tinta);background:var(--tiza)}
+h1,h2{font-family:var(--f-titulo);color:var(--campo)}
+h1{font-size:clamp(2.4rem,5.2vw,4.25rem);line-height:1.05;letter-spacing:-.015em;margin-bottom:1.25rem}
+h2{font-size:clamp(1.5rem,2.6vw,1.9rem);line-height:1.2;font-weight:600;margin-bottom:1rem}
+h3{font-size:1.05rem}
+p{max-width:var(--medida)}
+a{text-underline-offset:.2em}
+:focus-visible{outline:3px solid var(--oro-texto);outline-offset:3px}
+.saltar{position:absolute;left:1rem;top:-4rem;z-index:100;padding:.6rem 1rem;border-radius:4px;background:var(--campo);color:var(--tiza)}
+.saltar:focus{top:1rem}
+.contenido{margin-left:var(--ancho-sidebar);min-height:100vh;display:flex;flex-direction:column;padding:clamp(1.5rem,5vw,4.5rem)}
+.contenido>.seccion{margin-top:3.5rem;max-width:52rem}
+.pie{margin-top:auto;padding-top:4rem;font-size:.9rem;color:var(--apagado)}
+.lead{font-size:1.25rem;line-height:1.55}
+.hero{position:relative;isolation:isolate;padding-block:clamp(1rem,6vw,4rem)}
+.hero__texto{max-width:36rem}
+.hero__rol{margin-bottom:1rem;font-weight:700;color:var(--oro-texto)}
+.hero__intro{margin-bottom:2rem;font-size:1.25rem;line-height:1.55}
+.hero__campo{position:absolute;z-index:-1;right:-2rem;top:50%;transform:translateY(-50%);width:min(38rem,62%);height:auto}
+.campo-linea{fill:none;stroke:var(--campo);stroke-width:2;opacity:.3;stroke-dasharray:1;animation:trazar 2.2s ease-out both}
+.campo-punto{fill:var(--oro);animation:aparecer .6s 1.8s both}
+@keyframes trazar{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes aparecer{from{opacity:0}}
+.acciones{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+.hero .acciones{margin-top:0}
+.boton{display:inline-block;padding:.75rem 1.4rem;border:2px solid var(--campo);border-radius:4px;background:var(--campo);color:var(--tiza);font-weight:700;text-decoration:none}
+.boton:hover{background:var(--campo-2);border-color:var(--campo-2)}
+.boton--sec{background:transparent;color:var(--campo)}
+.boton--sec:hover{background:var(--campo);color:var(--tiza)}
+.datos{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:0 2rem}
+.datos>div{padding:.9rem 0 1.1rem;border-top:1px solid var(--linea)}
+.datos dt{font-weight:700;color:var(--campo)}
+.datos dd{color:var(--apagado)}
+.entradas{max-width:52rem;border-bottom:1px solid var(--linea)}
+.entrada{display:grid;grid-template-columns:1fr auto;gap:.2rem 1.5rem;padding-block:1.1rem;border-top:1px solid var(--linea)}
+.entrada__meta{color:var(--apagado);text-align:right}
+.entrada__texto{grid-column:1/-1}
+.etiquetas{display:flex;flex-wrap:wrap;gap:.4rem}
+.etiquetas li{padding:.1rem .65rem;border:1px solid var(--linea);border-radius:999px;font-size:.85rem;color:var(--campo)}
+.filtros{display:flex;flex-wrap:wrap;gap:.5rem;margin:2rem 0 1.5rem}
+.filtros button{padding:.4rem 1rem;border:1px solid var(--campo);border-radius:999px;background:transparent;color:var(--campo);cursor:pointer}
+.filtros button[aria-pressed="true"]{background:var(--campo);color:var(--tiza)}
+.proyectos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1.5rem}
+.proyecto-card{position:relative;overflow:hidden;border:1px solid var(--linea);border-radius:6px;background:#fff}
+.proyecto-card:hover{border-color:var(--campo)}
+.proyecto-card img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.proyecto-card__cuerpo{display:grid;gap:.5rem;padding:1rem 1.1rem 1.2rem}
+.proyecto-card__tipo{font-size:.9rem;font-weight:700;color:var(--oro-texto)}
+.proyecto-card h2{margin:0;font-size:1.25rem}
+.proyecto-card h2 a{text-decoration:none}
+.proyecto-card h2 a::after{content:"";position:absolute;inset:0}
+.vacio{max-width:36rem;margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--linea)}
+.contacto{max-width:40rem;margin:2rem 0}
+.contacto>div{display:grid;grid-template-columns:9rem 1fr;gap:1rem;padding:.9rem 0;border-top:1px solid var(--linea)}
+.contacto dt{font-weight:700;color:var(--campo)}

@@ -1,0 +1,13 @@
+.sidebar{position:fixed;inset:0 auto 0 0;z-index:20;width:var(--ancho-sidebar);display:flex;flex-direction:column;padding:2rem 1.5rem;overflow-y:auto;background:var(--campo);color:var(--tiza)}
+.marca{display:flex;align-items:center;gap:.9rem;color:var(--tiza);text-decoration:none}
+.marca__sigla{flex:none;display:grid;place-items:center;width:3rem;height:3rem;border:2px solid var(--oro);border-radius:50%;font-family:var(--f-titulo);font-weight:700;color:var(--oro)}
+.marca__nombre{font-family:var(--f-titulo);font-weight:600;font-size:1.1rem;line-height:1.2}
+.menu-boton{display:none}
+.sidebar__panel{display:flex;flex-direction:column;flex:1;margin-top:2.5rem}
+.sidebar__nav{display:grid;gap:.15rem}
+.sidebar__nav a{display:block;padding:.6rem .9rem;border-left:3px solid transparent;border-radius:0 4px 4px 0;color:rgba(241,243,238,.85);text-decoration:none}
+.sidebar__nav a:hover{background:var(--campo-2);color:#fff}
+.sidebar__nav a[aria-current="page"]{border-left-color:var(--oro);background:var(--campo-2);color:#fff;font-weight:700}
+.sidebar__redes{display:grid;gap:.3rem;margin-top:auto;padding-top:2rem;font-size:.95rem}
+.sidebar__redes a{color:rgba(241,243,238,.8)}
+.sidebar :focus-visible{outline-color:var(--oro)}
