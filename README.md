@@ -1,38 +1,23 @@
-# Currículum web de Juan Manuel Cuadrado Muñiz
+# Portfolio y Currículum Web - Juan Manuel Cuadrado Muñiz
 
-Portfolio y currículum personal de un estudiante de DAM. Sitio estático hecho con HTML, CSS y JavaScript, sin dependencias.
+Sitio web personal y portfolio de proyectos desarrollados durante el ciclo formativo de **Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)**.
 
-## Estructura
+## 🚀 Tecnologías utilizadas
+- HTML5, CSS3 y JavaScript (Vanilla)
+- Diseño responsive y adaptable a móviles
+- Despliegue gratuito con GitHub Pages
 
-```
-Curriculum/
-├── assets/
-│   ├── cv/         # CV en PDF
-│   ├── icons/      # favicon
-│   ├── img/        # capturas: una carpeta por proyecto
-│   └── pdf/        # documentación de los proyectos
-├── css/            # reset, estilos, sidebar, proyecto, responsive
-├── js/             # menu.js, portfolio.js
-├── proyectos/      # una página de detalle por proyecto
-│   └── plantilla-proyecto.html
-├── index.html
-├── sobremi.html
-├── curriculum.html
-├── portfolio.html
-└── contacto.html
-```
+## 📂 Estructura del proyecto
+- `index.html`: Página principal de presentación.
+- `portfolio.html`: Galería de proyectos con filtros por categoría.
+- `curriculum.html`: Formación, habilidades y experiencia.
+- `assets/`: Imágenes, iconos y documentos (CV en PDF).
+- `css/` y `js/`: Hojas de estilo y funcionalidad interactiva.
 
-## Ver en local
+## 🌐 Ver en vivo
+Este sitio está publicado y accesible en:
+👉 [jjuanma4.github.io/Curriculum](https://jjuanma4.github.io/Curriculum/)
 
-Abre `index.html` en el navegador (en Windows: `start index.html`).
-
-## Añadir un proyecto
-
-1. Copia `proyectos/plantilla-proyecto.html` con el nombre del proyecto y rellénala.
-2. Guarda las capturas en `assets/img/nombre-proyecto/`.
-3. En `portfolio.html`, descomenta la plantilla de tarjeta dentro de `proyectos-grid` y cambia los datos.
-   El filtro por tipo y el aviso de "sin proyectos" se gestionan solos.
-
-## Publicar con GitHub Pages
-
-Settings → Pages → Deploy from a branch → `main` / `(root)`.
+## 📫 Contacto
+- **LinkedIn**: [linkedin.com/in/jjuanma4](https://linkedin.com/in/jjuanma4) 
+- **Email**: juanmacm2007@gmail.com
